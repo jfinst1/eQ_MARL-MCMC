@@ -1,0 +1,26 @@
+[
+    {
+        "timestamp": "2025-04-12T07:08:14.927127",
+        "final_eval_reward": 0.45,
+        "acceptance_rate": 0.983,
+        "steps": 1000
+    },
+    {
+        "timestamp": "2025-04-12T07:11:49.272001",
+        "final_eval_reward": 0.53,
+        "acceptance_rate": 0.99,
+        "steps": 1000
+    },
+    {
+        "timestamp": "2025-04-12T07:20:04.503138",
+        "final_eval_reward": 0.5,
+        "acceptance_rate": 0.988,
+        "steps": 1000
+    },
+    {
+        "timestamp": "2025-04-12T08:02:01.059529",
+        "final_eval_reward": 0.745,
+        "acceptance_rate": 0.18,
+        "steps": 1000
+    }
+]
