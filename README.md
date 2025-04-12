@@ -47,7 +47,7 @@ cd qmarl-mcmc
 2. Run the training script:
 
 ```bash
-python qmarl_mcmc_gpu.py
+python eq_mcmc.py
 ```
 
 The program automatically detects and uses GPU hardware if present.
@@ -56,7 +56,7 @@ The program automatically detects and uses GPU hardware if present.
 
 ## Usage and Customization
 
-Adjust hyperparameters and training settings at the top of the `qmarl_mcmc_gpu.py` script:
+Adjust hyperparameters and training settings at the top of the `eq_mcmc.py` script:
 
 - **Agents (`n_gs`)**: Number of agents involved.
 - **MCMC steps (`n_mcmc_steps`)**: Adjust for more thorough or quicker training.
