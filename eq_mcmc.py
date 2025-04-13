@@ -99,12 +99,14 @@ def main():
     weights_trace, eval_rewards, accepted_list = [], [], []
 
     for step in range(n_mcmc_steps):
-        sigma_proposal = max(0.05, sigma_proposal * 0.995)
-        beta = min(30, beta * 1.005)
+
+        sigma_proposal = max(0.05, sigma_proposal * 0.999)
+        beta = min(30, beta * 1.001)
 
         proposed_weights = weights + torch.normal(0, sigma_proposal, size=weights.size(), device=device)
 
         s_samples = np.random.rand(K)
+
         reward_current = np.mean([compute_reward(get_actions([s, s], weights), s) for s in s_samples])
         reward_proposed = np.mean([compute_reward(get_actions([s, s], proposed_weights), s) for s in s_samples])
 
