@@ -10,8 +10,10 @@ import datetime
 n_gs = 2
 n_params_per_agent = 2
 n_params = n_gs * n_params_per_agent
-sigma_proposal = 0.5
-beta = 10.0
+
+sigma_proposal = max(0.05, sigma_proposal * 0.999)
+beta = min(30, beta * 1.001)
+
 K = 15
 M = 200
 n_mcmc_steps = 5000
